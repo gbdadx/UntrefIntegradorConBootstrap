@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+
+
+}
+
+body {
+    font-family: Poppins, sans-serif;
+}
+
+/*
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+*/
+
+/*
+Paleta de colores:  : #FC7300 , #1F8A70 , #00425A , #181823, #EFF5F5*/
+:root {
+    --color1: #FC7300;
+    --color2: #1F8A70;
+    --color3: #00425A;
+    --color4: #181823;
+    --color5: #EFF5F5;
+
+}
+
+
+.header {
+    height: 50vh;
+    background-image: url(../img/neneleyendo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.main {
+    background-color: var(--color4);
+}
+
+#porque img,
+#quienes img {
+    height: 20rem;
+    width: fit-content;
+
+}
+
+#footer {
+    background-color: var(--color3);
+    color: var(--color2);
+}
+
+#footer a {
+    color: var(--color2);
+}
+
+footer h2,
+#redes,
+#mapa {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li,
+a,
+.list-group-item {
+    border: none;
+}
+
+
+/*propuestas -carousel */
+
+
+.carousel-item img {
+    width: 100%;
+}
+
+/* pagina contacto  */
+#main2 {
+    background-image: url(../img/lapices.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+}
+
+form {
+    padding: 2rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    color: #181823;
+    background: rgba(255, 255, 255, .25);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1.5px solid rgba(209, 213, 219, 0.3);
+    width:100%;
+}
+
+
+fieldset input,
+fieldset textarea {
+    background-color: transparent !important;
+    color: var(--color3) !important;
+}
+
+fieldset label {
+    color: var(--color2);
+    font-weight: bold;
+}
+
+.orange {
+    background-color: var(--color1);
+    color: var(--color5);
+
+}
+
+/* cambio de fontsize */
+
+@media (width<300) {
+    html {
+        font-size: 10px;
+    }
+
+}
+
+@media (width<576) {
+    html {
+        font-size: 12px;
+    }
+  
+}
+
+@media (width>576) {
+    html {
+        font-size: 14px;
+    }
+  #form, .form, fieldset{
+    width:60%;
+  }
+}
+
+@media (width>768) {
+    html {
+        font-size: 16px;
+    }
+
+}
+
+@media (width>992) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media (width>1200) {
+    html {
+        font-size: 20px;
+    }
+}
