@@ -90,6 +90,7 @@ a,
     width: 100%;
 }
 
+
 /* pagina contacto  */
 #main2 {
     background-image: url(../img/lapices.jpg);
@@ -150,16 +151,16 @@ fieldset label {
     html {
         font-size: 14px;
     }
-  #form, .form, fieldset{
-    width:60%;
-  }
+  
+  
+ 
 }
 
 @media (width>768) {
     html {
         font-size: 16px;
     }
-
+ 
 }
 
 @media (width>992) {

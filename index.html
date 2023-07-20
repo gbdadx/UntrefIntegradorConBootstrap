@@ -21,36 +21,44 @@
 
 
 <body>
-    <nav id="nav" class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Third navbar example">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03"
-                aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarsExample03">
-                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="#quienes">Quienes somos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#porque">¿Por qué elegirnos?</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#propuesta" class="nav-link">Propuesta educativa</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#ultimasnews" class="nav-link">Últimas noticias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./contacto.html" class="nav-link">Contacto</a>
-                    </li>
-                </ul>
-
-            </div>
+    <!--
+        Quienes somos
+¿Por qué elegirnos?
+Propuesta educativa
+Últimas noticias
+Contacto
+    -->
+   <nav class="navbar navbar-expand-sm navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="./img/lapices.png" style="width:2rem;" alt="lapices"></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="#quienes">Quienes somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#porque">¿Por qué elegirnos?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#propuesta">Propuesta educativa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ultimasnews">Últimas noticias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+         
         </div>
-    </nav>
-
+     </div>
+   </nav>
+   
 
     <header class="header container-fluid d-flex flex-column align-items-center justify-content-center">
         <h1 class="display-1 header__title">UntrefSchool</h1>
@@ -60,7 +68,7 @@
         <h2 class="section__title section__title--h21"> <a href="#footer"><i class="fa-solid fa-angle-down"></i></a>
         </h2>
 
-        <section id="quienes" class="section">
+        <section id="quienes" class="section my-5">
             <h2 class=" h2 section__title--h21">Quienes somos &nbsp; <a href="#nav"><i
                         class="fa-solid fa-angle-up"></i></a></h2>
             <div
@@ -82,7 +90,8 @@
                         class="fa-solid fa-angle-up"></i></a></h2>
             <div
                 class="section__content section__content--div2 d-flex flex-column w-100 align-items-center d-md-flex flex-md-row  justify-content-md-around align-items-md-center">
-                <div class="section__image imagenPorque me-md-2 "><img src="./img/senderismo.jpg" alt="senderismo"></div>
+                <div class="section__image imagenPorque me-md-2 "><img src="./img/senderismo.jpg" alt="senderismo">
+                </div>
                 <article class="section__article section__article--artPorque">
                     <p class="section__paragraph">En nuestra escuela, creemos que cada alumno es único y especial. Por
                         eso, fomentamos la integración de los alumnos y respetamos sus individualidades. Además,
@@ -186,9 +195,9 @@
     </main>
 
 
-    <footer class="container-fluid py-2" id="footer">
+    <footer class="container-fluid p-1" id="footer">
         <div class="row">
-            <div id="redes" class="col-12 col-lg-4 footer__item ">
+            <div id="redes" class="col-12 pt-1  my-2 col-lg-4  footer__item ">
                 <h2 class="footer__title">Redes sociales</h2>
                 <div class="footer__social d-flex flex-row justify-content-around align-items-center">
                     <span class="footer__social-link pe-1"><a href="https://es-la.facebook.com/" target="_blank"
@@ -201,7 +210,7 @@
                             rel="noopener noreferrer"><img src="./img/youtube.svg" alt="youtube"></a></span>
                 </div>
             </div>
-            <div id="mapa" class="d-none d-lg-block col-lg-4 footer__item">
+            <div id="mapa" class="d-none d-lg-block pt-1 my-2 col-lg-4 footer__item">
                 <h2 class="footer__title">Instituto</h2>
                 <div class="footer__map">
                     <iframe
@@ -210,7 +219,7 @@
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-            <div id="contacto" class="col-12 col-lg-4 footer__item contacto">
+            <div id="contacto" class="col-12 pt-1 col-lg-4  my-2 footer__item contacto">
                 <h2 class="footer__title"><a href="./contacto.html">Contacto</a></h2>
                 <div class="footer__contact-info">
                     <div class="footer__contact-item telefono"><a href="tel:+541155555555" target="_blank"
