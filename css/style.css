@@ -37,7 +37,7 @@ Paleta de colores:  : #FC7300 , #1F8A70 , #00425A , #181823, #EFF5F5*/
 
 
 .header {
-    height: 50vh;
+    height: 70vh;
     background-image: url(../img/neneleyendo.jpg);
     background-position: center;
     background-size: cover;
@@ -136,66 +136,24 @@ fieldset label {
     font-size: 1rem;
 
 }
-
-/* cambio de fontsize */
-
-@media (width<320) {
+html {
+    font-size: 1rem;
+  }
+  
+  @include media-breakpoint-up(sm) {
     html {
-        font-size: 10px;
+      font-size: 1.2rem;
     }
-   
-        header {
-          height: 50vh;
-        }
-      
-}
-
-@media (width<576) {
+  }
+  
+  @include media-breakpoint-up(md) {
     html {
-        font-size: 12px;
+      font-size: 1.4rem;
     }
-   
-        header {
-          height: 60vh;
-        }
-      }
-
-
-@media (width>576) {
+  }
+  
+  @include media-breakpoint-up(lg) {
     html {
-        font-size: 14px;
+      font-size: 1.6rem;
     }
-
-    header {
-        height: 70vh;
-      }
-
-}
-
-@media (width>768) {
-    html {
-        font-size: 16px;
-    }
-    header {
-        height: 80vh;
-      }
-
-}
-
-@media (width>992) {
-    html {
-        font-size: 18px;
-    }
-    header {
-        height: 90vh;
-      }
-}
-
-@media (width>1200) {
-    html {
-        font-size: 20px;
-    }
-    header {
-        height: 100vh;
-      }
-}
+  }
