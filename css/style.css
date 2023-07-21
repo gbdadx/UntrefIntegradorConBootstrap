@@ -139,26 +139,36 @@ fieldset label {
 
 /* cambio de fontsize */
 
-@media (width<300) {
+@media (width<320) {
     html {
         font-size: 10px;
     }
-
+   
+        header {
+          height: 50vh;
+        }
+      
 }
 
 @media (width<576) {
     html {
         font-size: 12px;
     }
+   
+        header {
+          height: 60vh;
+        }
+      }
 
-}
 
 @media (width>576) {
     html {
         font-size: 14px;
     }
 
-
+    header {
+        height: 70vh;
+      }
 
 }
 
@@ -166,7 +176,9 @@ fieldset label {
     html {
         font-size: 16px;
     }
-
+    header {
+        height: 80vh;
+      }
 
 }
 
@@ -174,11 +186,16 @@ fieldset label {
     html {
         font-size: 18px;
     }
-
+    header {
+        height: 90vh;
+      }
 }
 
 @media (width>1200) {
     html {
         font-size: 20px;
     }
+    header {
+        height: 100vh;
+      }
 }
